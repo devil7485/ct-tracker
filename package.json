@@ -1,0 +1,39 @@
+{
+  "name": "ct-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:init": "tsx src/scripts/init-db.ts",
+    "backfill": "tsx src/scripts/backfill.ts",
+    "update": "tsx src/scripts/update.ts",
+    "track": "tsx src/scripts/track-performance.ts"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sql.js": "^1.12.0",
+    "playwright": "^1.49.1",
+    "axios": "^1.7.9",
+    "date-fns": "^4.1.0",
+    "recharts": "^2.15.0",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/sql.js": "^1.4.9",
+    "typescript": "^5",
+    "tsx": "^4.19.2",
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6"
+  }
+}
